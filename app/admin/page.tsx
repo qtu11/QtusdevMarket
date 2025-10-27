@@ -978,6 +978,12 @@ Hệ thống thông báo đang hoạt động bình thường.`
               testWhatsAppNotification={testWhatsAppNotification}
             />
           </TabsContent>
+          <TabsContent value="customersupport">
+            <CustomerSupport 
+              users={users}
+              adminUser={adminUser}
+            />
+          </TabsContent>
         </Tabs>
       </div>
     </div>

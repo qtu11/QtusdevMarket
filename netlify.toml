@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22.21.0"
+  
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  
+[build.processing]
+  skip_processing = false
+

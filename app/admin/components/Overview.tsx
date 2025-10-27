@@ -23,10 +23,10 @@ export function Overview({ stats, users, purchases, notifications }: OverviewPro
   return (
     <div className="space-y-6">
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-white/60">
-            <CardTitle className="text-sm font-medium">Tổng người dùng</CardTitle>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+        <Card className="bg-white/60 dark:bg-gray-800/60">
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 ">
+            <CardTitle className="text-sm font-medium ">Tổng người dùng</CardTitle>
             <Users className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -37,8 +37,8 @@ export function Overview({ stats, users, purchases, notifications }: OverviewPro
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-white/60">
+        <Card className="bg-white/60 dark:bg-gray-800/60">
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 ">
             <CardTitle className="text-sm font-medium">Tổng sản phẩm</CardTitle>
             <Package className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
@@ -50,7 +50,7 @@ export function Overview({ stats, users, purchases, notifications }: OverviewPro
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="bg-white/60 dark:bg-gray-800/60">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Tổng doanh thu</CardTitle>
             <DollarSign className="h-4 w-4 text-muted-foreground" />
@@ -65,7 +65,7 @@ export function Overview({ stats, users, purchases, notifications }: OverviewPro
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="bg-white/60 dark:bg-gray-800/60">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Chờ duyệt</CardTitle>
             <Bell className="h-4 w-4 text-muted-foreground" />
@@ -83,7 +83,7 @@ export function Overview({ stats, users, purchases, notifications }: OverviewPro
 
       {/* Recent Activities and Registrations */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <Card className="lg:col-span-2">
+        <Card className="lg:col-span-2 bg-white/60 dark:bg-gray-800/60">
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
               Giao dịch gần đây
@@ -131,7 +131,7 @@ export function Overview({ stats, users, purchases, notifications }: OverviewPro
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="bg-white/60 dark:bg-gray-800/60">
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
               Đăng ký mới ({stats.newUsersCount})
@@ -189,7 +189,7 @@ export function Overview({ stats, users, purchases, notifications }: OverviewPro
         </Card>
       </div>
 
-              <Card>
+              <Card className="bg-white/60 dark:bg-gray-800/60">
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
               Thông báo gần đây

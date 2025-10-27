@@ -16,7 +16,7 @@ interface UserProps {
 export function User({ users, updateUserStatus, updateUserBalance }: UserProps) {
   return (
     <div className="space-y-6">
-      <Card className="shadow-md">
+      <Card className="shadow-md bg-white/60 dark:bg-gray-800/40">
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
             <div className="flex items-center space-x-2">

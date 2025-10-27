@@ -23,9 +23,9 @@ export function Setting({
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <Card>
+        <Card className="bg-white/60 dark:bg-gray-800/40">
           <CardHeader>
-            <CardTitle className="flex items-center">
+            <CardTitle className="flex items-center ">
               <MessageSquare className="w-5 h-5 mr-2" />
               Thông báo Telegram
             </CardTitle>
@@ -47,7 +47,7 @@ export function Setting({
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="bg-white/60 dark:bg-gray-800/40">
           <CardHeader>
             <CardTitle className="flex items-center">
               <Phone className="w-5 h-5 mr-2" />
@@ -72,7 +72,7 @@ export function Setting({
         </Card>
       </div>
 
-      <Card>
+      <Card className="bg-white/60 dark:bg-gray-800/40">
         <CardHeader>
           <CardTitle>Thông tin hệ thống</CardTitle>
         </CardHeader>
